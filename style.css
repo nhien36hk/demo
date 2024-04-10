@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 0px 4px 11px 6px rgba(0, 0, 0, 0.1);
+    top: -150%;
+    transition: 0.3s ease all;
+}
+
+form.tick{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form .title{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+form .box{
+    display: flex;
+}
+
+.btn{
+    padding: 12px 16px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0px 4px 11px 6px rgba(0, 0, 0, 0.1);
+}
+
+form .box{
+    position: relative;
+    margin: 5px;
+}
+
+form .box input{
+    padding: 8px 25px;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+form .box i{
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-submit{
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
